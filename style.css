@@ -148,9 +148,8 @@ a {
 
 .sidebar-footer {
     display: flex;
-    gap: 12px;
+    gap: 18px;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 .sidebar-footer a,
@@ -160,42 +159,28 @@ a {
     transition: color 180ms ease;
 }
 
-.social-link {
-    min-height: 42px;
-    padding: 0 14px;
+.linkedin-icon {
+    width: 18px;
+    height: 18px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    border-radius: 999px;
-    border: 1px solid rgba(136, 146, 176, 0.18);
-    background: rgba(17, 34, 64, 0.38);
-    transition:
-        color 180ms ease,
-        border-color 180ms ease,
-        background-color 180ms ease,
-        transform 180ms ease;
+    width: 18px;
+    height: 18px;
+    color: var(--muted);
+    transform: translateY(1px);
+    transition: color 180ms ease, transform 180ms ease;
 }
 
-.social-link svg {
+.linkedin-icon svg {
     width: 18px;
     height: 18px;
     fill: currentColor;
-    flex: 0 0 auto;
 }
 
-.social-link span {
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.74rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-}
-
-.social-link:hover,
-.social-link:focus-visible {
+.linkedin-icon:hover,
+.linkedin-icon:focus-visible {
     color: var(--accent);
-    border-color: rgba(100, 255, 218, 0.18);
-    background: rgba(100, 255, 218, 0.06);
     transform: translateY(-2px);
 }
 
