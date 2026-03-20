@@ -53,13 +53,10 @@ a {
 }
 
 .sidebar-inner {
-    position: sticky;
-    top: 0;
-    min-height: 100vh;
     padding: 108px 0 80px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 56px;
 }
 
 .brand {
@@ -150,6 +147,7 @@ a {
     display: flex;
     gap: 18px;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .sidebar-footer a,
@@ -159,29 +157,68 @@ a {
     transition: color 180ms ease;
 }
 
-.linkedin-icon {
-    width: 18px;
-    height: 18px;
+.social-icon {
+    width: 42px;
+    height: 42px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 18px;
-    height: 18px;
-    color: var(--muted);
-    transform: translateY(1px);
-    transition: color 180ms ease, transform 180ms ease;
+    border-radius: 999px;
+    border: 1px solid rgba(136, 146, 176, 0.14);
+    background: rgba(17, 34, 64, 0.42);
+    color: var(--muted-soft);
+    transition:
+        color 180ms ease,
+        transform 180ms ease,
+        border-color 180ms ease,
+        box-shadow 180ms ease,
+        background-color 180ms ease;
 }
 
-.linkedin-icon svg {
+.social-icon svg {
     width: 18px;
     height: 18px;
     fill: currentColor;
 }
 
+.github-icon {
+    color: #f8fafc;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.linkedin-icon {
+    color: #0a66c2;
+    background: rgba(10, 102, 194, 0.14);
+}
+
+.email-icon {
+    color: #ea4335;
+    background: rgba(234, 67, 53, 0.14);
+}
+
+.social-icon:hover,
+.social-icon:focus-visible {
+    transform: translateY(-2px);
+    border-color: rgba(100, 255, 218, 0.22);
+    box-shadow: 0 10px 24px rgba(2, 12, 27, 0.26);
+}
+
+.github-icon:hover,
+.github-icon:focus-visible {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.12);
+}
+
 .linkedin-icon:hover,
 .linkedin-icon:focus-visible {
-    color: var(--accent);
-    transform: translateY(-2px);
+    color: #57a6ff;
+    background: rgba(10, 102, 194, 0.22);
+}
+
+.email-icon:hover,
+.email-icon:focus-visible {
+    color: #ff7a6f;
+    background: rgba(234, 67, 53, 0.22);
 }
 
 .content {
@@ -331,8 +368,6 @@ a {
     }
 
     .sidebar-inner {
-        position: static;
-        min-height: auto;
         padding: 48px 0 0;
         gap: 28px;
     }
