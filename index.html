@@ -4,182 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steven Xiong | Software Engineer</title>
-    <meta name="description" content="Steven Xiong builds practical software products with a focus on full-stack engineering, debugging, and systems that hold up in real use.">
+    <meta name="description" content="Steven Xiong is a software engineer building practical products with React, TypeScript, Express, and Flutter.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="page-noise" aria-hidden="true"></div>
-    <header class="topbar">
-        <a class="wordmark" href="#home">Steven Xiong</a>
-        <nav class="nav">
-            <a href="#about">About</a>
-            <a href="#work">Work</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <div class="page-shell">
+        <aside class="sidebar">
+            <div class="sidebar-inner">
+                <div class="intro">
+                    <a class="brand" href="#top">Steven Xiong</a>
+                    <p class="role">Software Engineer</p>
+                    <p class="summary">
+                        I build practical web and mobile products with a focus on clean implementation,
+                        steady iteration, and maintainable systems.
+                    </p>
+                </div>
 
-    <main>
-        <section class="hero" id="home">
-            <div class="hero-copy">
-                <p class="eyebrow">Software Engineer</p>
-                <h1>Building practical web and mobile software with a focus on clean execution.</h1>
-                <p class="hero-text">
-                    I work across frontend, backend, and application logic using React, TypeScript,
-                    Express, and Flutter. I like turning rough ideas into working products that are
-                    simple to use and easier to maintain.
-                </p>
-                <div class="hero-actions">
-                    <a class="button button-primary" href="mailto:xiongxg@msn.com">Email Me</a>
-                    <a class="button button-secondary" href="https://github.com/stevenbear01" target="_blank" rel="noreferrer">GitHub</a>
+                <nav class="section-nav" aria-label="Section navigation">
+                    <a href="#about">About</a>
+                    <a href="#experience">Approach</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+
+                <div class="sidebar-footer">
+                    <a href="https://github.com/stevenbear01" target="_blank" rel="noreferrer">GitHub</a>
+                    <a href="mailto:xiongxg@msn.com">Email</a>
                 </div>
             </div>
-            <aside class="hero-panel">
-                <div class="stat">
-                    <span class="stat-label">Focus</span>
-                    <span class="stat-value">Full-stack and mobile apps</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-label">Style</span>
-                    <span class="stat-value">Practical and product-oriented</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-label">Strengths</span>
-                    <span class="stat-value">React, TypeScript, Express, Flutter</span>
-                </div>
-                <div class="hero-note">
-                    <span class="note-kicker">Current approach</span>
-                    <p>I like small feedback loops, clear architecture, and interfaces that solve real workflow problems.</p>
-                </div>
-            </aside>
-        </section>
+        </aside>
 
-        <section class="section" id="about">
-            <div class="section-heading">
-                <p class="eyebrow">About</p>
-                <h2>Engineer first, tool chooser second.</h2>
-            </div>
-            <div class="about-grid">
+        <main class="content" id="top">
+            <section class="content-section" id="about">
                 <p>
-                    I enjoy taking a project from rough concept to working implementation. That includes
-                    building the interface, wiring the backend, debugging issues, and tightening the details
-                    so the result feels dependable.
+                    I enjoy taking rough ideas and turning them into usable software. That usually means
+                    moving across interface work, application logic, backend wiring, debugging, and the
+                    final cleanup that makes a product easier to maintain.
                 </p>
                 <p>
-                    In this workspace I have been building React and TypeScript tools, an Express-backed job
-                    workflow app, a Flutter password manager, and algorithm practice projects in both
-                    TypeScript and Python. I care about shipping, but not at the cost of maintainability.
+                    My recent work has centered on <span class="highlight">React</span>,
+                    <span class="highlight">TypeScript</span>, <span class="highlight">Express</span>,
+                    and <span class="highlight">Flutter</span>. I like products that solve real workflow
+                    problems and codebases that stay readable after the first version ships.
                 </p>
-            </div>
-        </section>
+                <p>
+                    In this workspace, I have been building a full-stack internship workflow tool,
+                    experimenting with a Flutter password manager, and sharpening implementation discipline
+                    through TypeScript and Python algorithm work.
+                </p>
+            </section>
 
-        <section class="section" id="work">
-            <div class="section-heading">
-                <p class="eyebrow">Work</p>
-                <h2>How I like to operate.</h2>
-            </div>
-            <div class="cards two-column">
-                <article class="card">
-                    <p class="card-tag">Build</p>
-                    <h3>End-to-end product building</h3>
-                    <p>
-                        I am comfortable moving from UI work to backend behavior, local state,
-                        API flows, and the polish needed to make a feature usable.
-                    </p>
-                </article>
-                <article class="card">
-                    <p class="card-tag">Debug</p>
-                    <h3>Comfortable in debugging-heavy work</h3>
-                    <p>
-                        I like tracing issues through logs, state, and behavior until the root cause
-                        is clear instead of layering on temporary fixes.
-                    </p>
-                </article>
-                <article class="card">
-                    <p class="card-tag">Ship</p>
-                    <h3>Momentum with structure</h3>
-                    <p>
-                        I push toward working outcomes, but I still care about readable code,
-                        clear structure, and leaving projects easier to extend.
-                    </p>
-                </article>
-                <article class="card">
-                    <p class="card-tag">Improve</p>
-                    <h3>Learn quickly and iterate</h3>
-                    <p>
-                        The best version of a product usually comes from fast feedback and steady
-                        refinement, not from assuming the first draft is final.
-                    </p>
-                </article>
-            </div>
-        </section>
+            <section class="content-section" id="experience">
+                <h2 class="section-title">How I Work</h2>
 
-        <section class="section" id="projects">
-            <div class="section-heading">
-                <p class="eyebrow">Projects</p>
-                <h2>Recent themes in my work.</h2>
-            </div>
-            <div class="cards project-grid">
-                <article class="project-card">
-                    <div class="project-top">
-                        <p class="card-tag">Web App</p>
-                        <span class="project-meta">React + Express</span>
+                <article class="entry">
+                    <div class="entry-meta">Build</div>
+                    <div class="entry-body">
+                        <h3>End-to-end product thinking</h3>
+                        <p>
+                            I am comfortable moving from interface design to component structure, API flow,
+                            server behavior, and release-ready polish. I prefer shipping a focused product
+                            that actually works over inflating the stack for no reason.
+                        </p>
                     </div>
-                    <h3>Intern Scout</h3>
-                    <p>
-                        A full-stack internship and job workflow project built with React,
-                        TypeScript, Vite, Tailwind, and Express to organize and track opportunities.
-                    </p>
                 </article>
-                <article class="project-card">
-                    <div class="project-top">
-                        <p class="card-tag">Mobile App</p>
-                        <span class="project-meta">Flutter</span>
-                    </div>
-                    <h3>Password Manager</h3>
-                    <p>
-                        A Flutter-based password manager project exploring secure storage,
-                        cross-platform app structure, and mobile-first product development.
-                    </p>
-                </article>
-                <article class="project-card">
-                    <div class="project-top">
-                        <p class="card-tag">Algorithms</p>
-                        <span class="project-meta">TypeScript + Python</span>
-                    </div>
-                    <h3>LeetCode Practice Repository</h3>
-                    <p>
-                        A growing collection of algorithm solutions and tests used to sharpen
-                        problem solving, data structure work, and implementation discipline.
-                    </p>
-                </article>
-            </div>
-        </section>
 
-        <section class="section contact-section" id="contact">
-            <div class="section-heading">
-                <p class="eyebrow">Contact</p>
-                <h2>If you need someone who can build and tighten the details, reach out.</h2>
-            </div>
-            <div class="contact-panel">
-                <a class="contact-line" href="mailto:xiongxg@msn.com">
-                    <span>Email</span>
-                    <strong>xiongxg@msn.com</strong>
+                <article class="entry">
+                    <div class="entry-meta">Debug</div>
+                    <div class="entry-body">
+                        <h3>Calm in messy situations</h3>
+                        <p>
+                            I like tracing issues through behavior, state, and data rather than layering
+                            on patches. Good debugging usually saves more time than rushing into the wrong fix.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-meta">Iterate</div>
+                    <div class="entry-body">
+                        <h3>Momentum without losing structure</h3>
+                        <p>
+                            I care about speed, but not the kind that leaves fragile code behind. My goal is
+                            to keep moving while still leaving the project easier to read and extend.
+                        </p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="content-section" id="projects">
+                <h2 class="section-title">Selected Projects</h2>
+
+                <a class="project" href="https://github.com/stevenbear01" target="_blank" rel="noreferrer">
+                    <div class="project-kicker">React TypeScript Express</div>
+                    <div class="project-main">
+                        <h3>Intern Scout</h3>
+                        <p>
+                            A full-stack internship and job workflow tool built with React, TypeScript,
+                            Vite, Tailwind, and Express. The project is centered on organizing company
+                            tracking and making repeated search workflows easier to manage.
+                        </p>
+                        <ul class="tech-list">
+                            <li>React</li>
+                            <li>TypeScript</li>
+                            <li>Express</li>
+                            <li>Tailwind</li>
+                        </ul>
+                    </div>
                 </a>
-                <a class="contact-line" href="https://github.com/stevenbear01" target="_blank" rel="noreferrer">
-                    <span>GitHub</span>
-                    <strong>github.com/stevenbear01</strong>
-                </a>
-            </div>
-        </section>
-    </main>
 
-    <footer class="footer">
-        <p>Steven Xiong</p>
-        <p>Software Engineer</p>
-    </footer>
+                <a class="project" href="https://github.com/stevenbear01" target="_blank" rel="noreferrer">
+                    <div class="project-kicker">Flutter</div>
+                    <div class="project-main">
+                        <h3>Password Manager</h3>
+                        <p>
+                            A Flutter-based password manager project exploring secure storage,
+                            cross-platform app structure, and mobile-first product implementation.
+                        </p>
+                        <ul class="tech-list">
+                            <li>Flutter</li>
+                            <li>Dart</li>
+                            <li>Secure Storage</li>
+                        </ul>
+                    </div>
+                </a>
+
+                <a class="project" href="https://github.com/stevenbear01" target="_blank" rel="noreferrer">
+                    <div class="project-kicker">TypeScript Python</div>
+                    <div class="project-main">
+                        <h3>LeetCode Practice Repository</h3>
+                        <p>
+                            A growing set of algorithm implementations and tests used to strengthen
+                            problem solving, data structure work, and implementation discipline in both
+                            TypeScript and Python.
+                        </p>
+                        <ul class="tech-list">
+                            <li>TypeScript</li>
+                            <li>Python</li>
+                            <li>Testing</li>
+                        </ul>
+                    </div>
+                </a>
+            </section>
+
+            <section class="content-section contact-section" id="contact">
+                <h2 class="section-title">Contact</h2>
+                <p>
+                    If you are looking for someone who can build features, debug real issues,
+                    and keep the codebase moving in a clean direction, feel free to reach out.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:xiongxg@msn.com">xiongxg@msn.com</a>
+                    <a href="https://github.com/stevenbear01" target="_blank" rel="noreferrer">github.com/stevenbear01</a>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
