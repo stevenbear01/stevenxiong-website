@@ -27,6 +27,8 @@ body {
     color: var(--text);
     font-family: "Inter", sans-serif;
     line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
 a {
@@ -50,7 +52,7 @@ a {
     position: sticky;
     top: 0;
     min-height: 100vh;
-    padding: 96px 0 72px;
+    padding: 108px 0 80px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -59,7 +61,7 @@ a {
 .brand {
     display: inline-block;
     text-decoration: none;
-    font-size: clamp(2.7rem, 5vw, 4rem);
+    font-size: clamp(2.95rem, 5vw, 4.35rem);
     font-weight: 700;
     line-height: 0.95;
     letter-spacing: -0.05em;
@@ -67,7 +69,7 @@ a {
 
 .role {
     margin-top: 18px;
-    font-size: 1.15rem;
+    font-size: 1.22rem;
     font-weight: 600;
     color: var(--muted-soft);
 }
@@ -76,6 +78,7 @@ a {
     margin-top: 18px;
     max-width: 22rem;
     color: var(--muted);
+    font-size: 1rem;
 }
 
 .section-nav {
@@ -89,9 +92,9 @@ a {
     color: var(--muted);
     text-decoration: none;
     font-family: "IBM Plex Mono", monospace;
-    font-size: 0.88rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.14em;
     display: inline-flex;
     align-items: center;
     gap: 14px;
@@ -104,6 +107,15 @@ a {
     height: 1px;
     background: var(--muted);
     transition: width 180ms ease, background-color 180ms ease;
+}
+
+.section-nav a.active {
+    color: var(--text);
+}
+
+.section-nav a.active::before {
+    width: 72px;
+    background: var(--text);
 }
 
 .section-nav a:hover,
@@ -137,19 +149,21 @@ a {
 }
 
 .content {
-    padding: 96px 0 0;
+    padding: 108px 0 0;
 }
 
 .content-section + .content-section {
-    margin-top: 96px;
+    margin-top: 108px;
 }
 
 .content-section p {
     color: var(--muted);
+    max-width: 34rem;
+    font-size: 1.02rem;
 }
 
 .content-section p + p {
-    margin-top: 18px;
+    margin-top: 20px;
 }
 
 .highlight {
@@ -160,10 +174,10 @@ a {
 .section-title {
     margin-bottom: 24px;
     color: var(--text);
-    font-size: 0.95rem;
+    font-size: 0.82rem;
     font-family: "IBM Plex Mono", monospace;
     text-transform: uppercase;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.14em;
 }
 
 .entry,
@@ -171,7 +185,7 @@ a {
     display: grid;
     grid-template-columns: 120px minmax(0, 1fr);
     gap: 24px;
-    padding: 22px 18px;
+    padding: 24px 18px;
     margin: 0 -18px;
     border: 1px solid transparent;
     border-radius: 14px;
@@ -197,15 +211,15 @@ a {
 .project-kicker {
     color: var(--muted);
     font-family: "IBM Plex Mono", monospace;
-    font-size: 0.8rem;
+    font-size: 0.74rem;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.12em;
     padding-top: 4px;
 }
 
 .entry-body h3,
 .project-main h3 {
-    font-size: 1.1rem;
+    font-size: 1.12rem;
     color: var(--text);
     transition: color 180ms ease;
 }
@@ -213,6 +227,7 @@ a {
 .entry-body p,
 .project-main p {
     margin-top: 10px;
+    max-width: 34rem;
 }
 
 .tech-list {
@@ -224,12 +239,12 @@ a {
 }
 
 .tech-list li {
-    padding: 6px 10px;
+    padding: 5px 10px;
     border-radius: 999px;
     background: rgba(100, 255, 218, 0.08);
     color: var(--accent);
     font-family: "IBM Plex Mono", monospace;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
 }
 
 .contact-section {
@@ -256,7 +271,7 @@ a {
     }
 
     .content {
-        padding-top: 20px;
+        padding-top: 28px;
     }
 
     .section-nav {
@@ -284,5 +299,11 @@ a {
 
     .content-section + .content-section {
         margin-top: 72px;
+    }
+
+    .content-section p,
+    .entry-body p,
+    .project-main p {
+        max-width: none;
     }
 }
