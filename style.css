@@ -148,7 +148,7 @@ a {
 
 .sidebar-footer {
     display: flex;
-    gap: 18px;
+    gap: 12px;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -161,14 +161,15 @@ a {
 }
 
 .social-link {
-    width: 40px;
-    height: 40px;
+    min-height: 42px;
+    padding: 0 14px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
     border-radius: 999px;
-    border: 1px solid transparent;
-    background: transparent;
+    border: 1px solid rgba(136, 146, 176, 0.18);
+    background: rgba(17, 34, 64, 0.38);
     transition:
         color 180ms ease,
         border-color 180ms ease,
@@ -177,9 +178,17 @@ a {
 }
 
 .social-link svg {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     fill: currentColor;
+    flex: 0 0 auto;
+}
+
+.social-link span {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.74rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
 .social-link:hover,
